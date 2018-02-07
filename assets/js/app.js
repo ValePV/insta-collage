@@ -1,7 +1,8 @@
 
 $('#collage-section').hide();
 
-$('#login').click(function(){
+
+$('.btn-login').click(function(){
   if($('#username').val() == '') {
     $('.input').add(addClass('error'));
   }
@@ -14,7 +15,7 @@ $('#login').click(function(){
   }
 
 });
-  
+
 $('#login').click(function(){
   $('.section').hide();
   $('#collage-section').show();
