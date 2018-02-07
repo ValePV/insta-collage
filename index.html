@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>INSTA COLLAGE</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <section class="section">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4">
+        <div class="login-box">
+          <legend class="text-center">LOG IN</legend>
+          <section class="form">
+            <form>
+              <div class="input-group input uname">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" id="username" placeholder="Username" class="form-control" required>
+              </div>
+              <div class="input-group input pass">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" id="password" placeholder="Password" class="form-control" required>
+              </div>
+              <a href="#" class="text-center">Lost Your Password?</a>
+              <p class="error-msg text-center">Wrong Credential</p>
+              <div>
+                <input class="btn btn-primary btn-login" type="submit" id="login" value="Log in">
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="first-section" id="collage-section">
+    <div class="row">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand tittle-collage" href="#">COLLAGE</a>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <div class="contain" id="cont">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1 images-contain" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+        <div class="col-xs-3 images-contain" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+        <div class="col-xs-3 images-contain" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 col-xs-offset-1 images-contain" ondragover="allowDrop(event)" ondrop="drop(event)" >
+        </div>
+        <div class="col-xs-4 images-contain" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+        <div class="col-xs-3 images-contain" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand tittle-collage" href="#">IMAGENES</a>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <div class="contain1" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <div class="row">
+        <div class="col-xs-1 col-xs-offset-1 images-contain1">
+          <img class="img-responsive" id="img1" src="assets/images/ima1.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img2" src="assets/images/ima2.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img3" src="assets/images/ima3.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img4" src="assets/images/ima4.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img5" src="assets/images/ima5.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img6" src="assets/images/ima6.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img8" src="assets/images/img8.jpg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img9" src="assets/images/img9.jpg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+        <div class="col-xs-1 images-contain1">
+          <img class="img-responsive" id="img10" src="assets/images/img10.jpeg" draggable="true" ondragstart="drag(event)" ondragend="end(event)">
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  
+  
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/ada9774bec.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
