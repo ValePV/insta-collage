@@ -3,7 +3,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 legend{
   padding: 30px 4px;
   font-size: 30px;
@@ -21,32 +20,27 @@ legend{
   border-radius: 5%;
   padding: 5px;
   margin: 150px 0px;
-
 }
 .images-contain{
   min-height:  150px;
   border : 1px solid rgba(221, 221, 221, 0.35);
   padding: 10px;
-  
 }
 .contain{
   margin-bottom: 30px;
 }
-
 .images-contain1{
   min-height: 90px;
   border : 1px solid rgba(221, 221, 221, 0.35);
   padding: 15px;
-  
 }
-
-
 img{
-  
   margin :1px; 
 }
 .navbar-brand{
   margin-left: 80px;
 }
-
+a{
+  margin-left: 140px;
+}
 
